@@ -8,7 +8,7 @@
 <title>Retro Tech Surplus</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <%@ include file="header.jsp" %>
 

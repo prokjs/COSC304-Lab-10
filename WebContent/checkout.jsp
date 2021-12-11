@@ -2,7 +2,7 @@
 <head>
 <title>Retro Tech Surplus</title>
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <h1>Enter your customer id and password to complete the transaction:</h1>
 

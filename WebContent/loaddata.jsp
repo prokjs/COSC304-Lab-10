@@ -7,7 +7,7 @@
 <head>
 <title>Your Shopping Cart</title>
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <%
 String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";

@@ -7,7 +7,7 @@
 <head>
 <title>Your Shopping Cart</title>
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <%@ include file="header.jsp" %>
 
