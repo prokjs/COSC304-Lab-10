@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Ray's Grocery</title>
+<title>Retro Tech Surplus</title>
 </head>
 <body>
 

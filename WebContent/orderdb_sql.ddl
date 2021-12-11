@@ -137,51 +137,42 @@ CREATE TABLE review (
         ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-INSERT INTO category(categoryName) VALUES ('Beverages');
-INSERT INTO category(categoryName) VALUES ('Condiments');
-INSERT INTO category(categoryName) VALUES ('Dairy Products');
-INSERT INTO category(categoryName) VALUES ('Produce');
-INSERT INTO category(categoryName) VALUES ('Meat/Poultry');
-INSERT INTO category(categoryName) VALUES ('Seafood');
-INSERT INTO category(categoryName) VALUES ('Confections');
-INSERT INTO category(categoryName) VALUES ('Grains/Cereals');
+INSERT INTO category(categoryName) VALUES ('Consoles');
+INSERT INTO category(categoryName) VALUES ('Peripherals');
+INSERT INTO category(categoryName) VALUES ('Monitors');
+INSERT INTO category(categoryName) VALUES ('Computers');
+INSERT INTO category(categoryName) VALUES ('General Electronics');
 
 
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chai', 1, '10 boxes x 20 bags',18.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chang',1,'24 - 12 oz bottles',19.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Aniseed Syrup',2,'12 - 550 ml bottles',10.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Cajun Seasoning',2,'48 - 6 oz jars',22.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Gumbo Mix',2,'36 boxes',21.35);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Grandma''s Boysenberry Spread',2,'12 - 8 oz jars',25.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Uncle Bob''s Organic Dried Pears',4,'12 - 1 lb pkgs.',30.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Northwoods Cranberry Sauce',2,'12 - 12 oz jars',40.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Mishi Kobe Niku',5,'18 - 500 g pkgs.',97.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Ikura',6,'12 - 200 ml jars',31.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Queso Cabrales',3,'1 kg pkg.',21.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Queso Manchego La Pastora',3,'10 - 500 g pkgs.',38.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Tofu',4,'40 - 100 g pkgs.',23.25);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Genen Shouyu',2,'24 - 250 ml bottles',15.50);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Pavlova',7,'32 - 500 g boxes',17.45);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Alice Mutton',5,'20 - 1 kg tins',39.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Carnarvon Tigers',6,'16 kg pkg.',62.50);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Teatime Chocolate Biscuits',7,'10 boxes x 12 pieces',9.20);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sir Rodney''s Marmalade',7,'30 gift boxes',81.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sir Rodney''s Scones',7,'24 pkgs. x 4 pieces',10.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Gustaf''s Knackebread',8,'24 - 500 g pkgs.',21.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sasquatch Ale',1,'24 - 12 oz bottles',14.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Steeleye Stout',1,'24 - 12 oz bottles',18.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Inlagd Sill',6,'24 - 250 g  jars',19.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Boston Crab Meat',6,'24 - 4 oz tins',18.40);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Jack''s New England Clam Chowder',6,'12 - 12 oz cans',9.65);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Singaporean Hokkien Fried Mee',8,'32 - 1 kg pkgs.',14.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Louisiana Fiery Hot Pepper Sauce',2,'32 - 8 oz bottles',21.05);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Laughing Lumberjack Lager',1,'24 - 12 oz bottles',14.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Nintendo NES', 1, 'Includes one controller and cable',200.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Nintendo Super NES',1,'Includes one controller, cable and copy of Super Mario',300.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sega Genesis',1,'12 - Includes one controller and cable',200.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sony Playstation',1,'Includes two controllers and cable',400.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Playstation Portable',1,'Includes charging cable and copy of Persona 3 Portable',300.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Atari',1,'Includes cable. No controller',150.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Capcom Home Arcade',1,'Includes cable and controller',200.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Nintendo 64',1,'Includes cable. Controller sold separately',170.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Nintendo 64 Controller',2,'Controller for N64',50.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sega Genesis Controller',2,'Controller for Sega Genesis',50.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Super Nintendo Controller',2,'Controller for Super Nintendo',40.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('AV Cable',2,'4 foot Cable to attach console to TV',40.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sony Playstation Controller',2,'Controller for Sony Playstation',50.25);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Playstation Portable Charger',2,'2-foot Charger for Playstation Portable',30.50);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('DELL CRT Monitor',3,'800x800 resolution monitor',100.45);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('GATEWAY CRT Monitor',3,'600x600 resolution monitor',89.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Apple Macintosh Quadro 800',4,'50mb harddrive',400.50);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Commodore Amiga 1000',4,'100mb harddrive',300.20);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Vtg IBM PS/2',4,'500mb harddrive. Comes with keyboard',600.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Sony Camcorder',5,'Records HD video',200.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Canon AE-1',5,'35 mm single-lens reflex',150.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Atari Portfolio',5,'128 KB of RAM',200.00);
+
     
-INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Arnold', 'Anderson', 'a.anderson@gmail.com', '204-111-2222', '103 AnyWhere Street', 'Winnipeg', 'MB', 'R3X 45T', 'Canada', 'arnold' , 'test');
-INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Bobby', 'Brown', 'bobby.brown@hotmail.ca', '572-342-8911', '222 Bush Avenue', 'Boston', 'MA', '22222', 'United States', 'bobby' , 'bobby');
-INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Candace', 'Cole', 'cole@charity.org', '333-444-5555', '333 Central Crescent', 'Chicago', 'IL', '33333', 'United States', 'candace' , 'password');
-INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Darren', 'Doe', 'oe@doe.com', '250-807-2222', '444 Dover Lane', 'Kelowna', 'BC', 'V1V 2X9', 'Canada', 'darren' , 'pw');
-INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Elizabeth', 'Elliott', 'engel@uiowa.edu', '555-666-7777', '555 Everwood Street', 'Iowa City', 'IA', '52241', 'United States', 'beth' , 'test');
+INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Brad', 'Pitt', 'fightclub@gmail.com', '999-666-1122', '103 Back Street', 'Miami', 'FL', 'R3X 45T', 'USA', 'brad' , 'fight');
+INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Dennis', 'Jones', 'denny.jones@hotmail.ca', '895-367-9011', '222 Red Avenue', 'New York', 'NY', '99999', 'United States', 'denny' , 'jones');
+INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Jim', 'Henry', 'jhen@gmail.com', '999-999-1111', '444 Discovery Crescent', 'San Francisco', 'CA', '23478', 'United States', 'jim' , 'crabs');
+INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Jane', 'Doe', 'JD@hotmail.com', '250-897-2122', '444 Clever Lane', 'Kelowna', 'BC', 'V1V 1V8', 'Canada', 'jane' , 'donkey');
+INSERT INTO customer (firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid, password) VALUES ('Mary', 'Jane', 'janem@uiowa.edu', '985-673-7799', '555 Everwood Road', 'Iowa City', 'IA', '52789', 'United States', 'mary' , 'HelloWorld');
 
 
 DECLARE @orderId int
