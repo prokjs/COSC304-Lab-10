@@ -3,7 +3,7 @@
 <head>
 <title>Login Screen</title>
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <div style="margin:0 auto;text-align:center;display:inline">
 

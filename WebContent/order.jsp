@@ -11,7 +11,7 @@
 <head>
 <title>Retro Tech Surplus Order Processing</title>
 </head>
-<body>
+<body bgcolor="#ECE6C2">
         
 <%@ include file="header.jsp" %>
 

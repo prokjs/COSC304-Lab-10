@@ -3,7 +3,7 @@
 <head>
 <title>Customer Page</title>
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <%@ include file="auth.jsp"%>
 <%@ page import="java.text.NumberFormat" %>

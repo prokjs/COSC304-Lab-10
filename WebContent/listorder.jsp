@@ -7,7 +7,7 @@
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body bgcolor="#ECE6C2">
 
 <h1>Order List</h1>
 
