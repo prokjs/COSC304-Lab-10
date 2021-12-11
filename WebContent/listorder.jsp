@@ -3,7 +3,7 @@
 
 <html>
 <head>
-<title>Ray's Grocery Order List</title>
+<title>Retro Tech Surplus Order List</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
