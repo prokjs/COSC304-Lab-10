@@ -18,9 +18,12 @@ String sql = "SELECT O.orderId, O.CustomerId, totalAmount, firstName+' '+lastNam
 
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
 
-try 
+String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+String uid = "SA";
+String pw = "YourStrong@Passw0rd";
+
+try (Connection con = DriverManager.getConnection(url, uid, pw);)
 {	
-	getConnection();
 	ResultSet rst = con.createStatement().executeQuery(sql);		
 	out.println("<table class=\"table\" border=\"1\">");
 	out.print("<tr><th>Order Id</th><th>Order Date</th><th>Customer Id</th><th>Customer Name</th>");
@@ -84,10 +87,6 @@ try
 }
 catch (SQLException ex) 
 { 	out.println(ex); 
-}
-finally
-{	
-	closeConnection();	
 }
 %>
 

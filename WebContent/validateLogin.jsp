@@ -30,9 +30,14 @@
 		if((username.length() == 0) || (password.length() == 0))
 				return null;
 
-		try 
+		String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+		String uid = "SA";
+		String pw = "YourStrong@Passw0rd";
+		
+		try (Connection con = DriverManager.getConnection(url, uid, pw);)
+				
 		{
-			getConnection();
+	
 			String sql = "SELECT * FROM Customer WHERE userId = ? and password = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);			
 			pstmt.setString(1, username);
@@ -46,10 +51,7 @@
 		catch (SQLException ex) {
 			out.println(ex);
 		}
-		finally
-		{
-			closeConnection();
-		}	
+		
 		
 		if(retStr != null)
 		{	session.removeAttribute("loginMessage");

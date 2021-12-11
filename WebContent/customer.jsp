@@ -20,11 +20,14 @@ String sql = "select customerId, firstName, lastName, email, phonenum, address, 
 
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
 
-try 
+String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+String uid = "SA";
+String pw = "YourStrong@Passw0rd";
+
+try (Connection con = DriverManager.getConnection(url, uid, pw);)
+
 {	
 	out.println("<h3>Customer Profile</h3>");
-	
-	getConnection();
 	PreparedStatement pstmt = con.prepareStatement(sql);
 	pstmt.setString(1, userName);	
 	ResultSet rst = pstmt.executeQuery();
@@ -48,10 +51,6 @@ try
 }
 catch (SQLException ex) 
 { 	out.println(ex); 
-}
-finally
-{	
-	closeConnection();	
 }
 %>
 

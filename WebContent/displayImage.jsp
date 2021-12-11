@@ -20,9 +20,12 @@ catch(Exception e)
 
 String sql = "SELECT productImage FROM Product P  WHERE productId = ?";
 
-try 
+String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+String uid = "SA";
+String pw = "YourStrong@Passw0rd";
+
+try (Connection con = DriverManager.getConnection(url, uid, pw);) 
 {
-	getConnection();
 	PreparedStatement stmt = con.prepareStatement(sql);
 	stmt.setInt(1,idVal);
 	ResultSet rst = stmt.executeQuery();		
@@ -46,9 +49,5 @@ try
 } 
 catch (SQLException ex) {
 	out.println(ex);
-}
-finally
-{
-	closeConnection();
 }
 %>

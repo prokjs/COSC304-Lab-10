@@ -19,15 +19,18 @@
 // Get order id
 String ordId = request.getParameter("orderId");
           
-try 
+String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+String uid = "SA";
+String pw = "YourStrong@Passw0rd";
+
+try (Connection con = DriverManager.getConnection(url, uid, pw);)
+
 {	
 	if (ordId == null || ordId.equals(""))
 		out.println("<h1>Invalid order id.</h1>");	
 	else
 	{					
 		// Get database connection
-        getConnection();
-	            
      	// Check if valid order id
         String sql = "SELECT orderId, productId, quantity, price FROM orderproduct WHERE orderId = ?";	
 				      
@@ -116,8 +119,6 @@ finally
 {
 	try
 	{
-		if (con != null)
-			con.close();
 	}
 	catch (SQLException ex)
 	{       out.println(ex);

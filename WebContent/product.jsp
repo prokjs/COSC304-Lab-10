@@ -20,9 +20,13 @@ String sql = "SELECT productId, productName, productPrice, productImageURL, prod
 
 NumberFormat currFormat = NumberFormat.getCurrencyInstance();
 
-try 
+String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+String uid = "SA";
+String pw = "YourStrong@Passw0rd";
+
+try (Connection con = DriverManager.getConnection(url, uid, pw);)
+
 {
-	getConnection();
 	PreparedStatement pstmt = con.prepareStatement(sql);
 	pstmt.setInt(1, Integer.parseInt(productId));			
 	
@@ -61,10 +65,6 @@ try
 } 
 catch (SQLException ex) {
 	out.println(ex);
-}
-finally
-{
-	closeConnection();
 }
 %>
 

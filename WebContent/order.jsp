@@ -24,7 +24,12 @@ String password = request.getParameter("password");
 @SuppressWarnings({"unchecked"})
 HashMap<String, ArrayList<Object>> productList = (HashMap<String, ArrayList<Object>>) session.getAttribute("productList");
                 
-try 
+String url = "jdbc:sqlserver://db:1433;DatabaseName=tempdb;";
+String uid = "SA";
+String pw = "YourStrong@Passw0rd";
+
+try (Connection con = DriverManager.getConnection(url, uid, pw);)
+
 {	
 	if (custId == null || custId.equals(""))
 		out.println("<h1>Invalid customer id.  Go back to the previous page and try again.</h1>");
@@ -45,11 +50,11 @@ try
 		}		
         
 		// Get database connection
-        getConnection();
+        
 	                		
         String sql = "SELECT customerId, firstName+' '+lastName, password FROM customer WHERE customerId = ?";	
 				      
-   		con = DriverManager.getConnection(url, uid, pw);
+   		
    		PreparedStatement pstmt = con.prepareStatement(sql);
    		pstmt.setInt(1, num);
    		ResultSet rst = pstmt.executeQuery();
@@ -138,17 +143,7 @@ try
 catch (SQLException ex)
 { 	out.println(ex);
 }
-finally
-{
-	try
-	{
-		if (con != null)
-			con.close();
-	}
-	catch (SQLException ex)
-	{       out.println(ex);
-	}
-}  
+
 %>                       				
 
 <h2><a href="shop.html">Back to Main Page</a></h2>
